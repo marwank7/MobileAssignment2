@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+
+    tools:context=".MainActivity">
+
+  <!--  <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/runningman1"
+        android:backgroundTint="@color/colorPrimary"
+
+        />-->
+    <RelativeLayout
+        android:background="@drawable/runningman1"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Name"
+        android:textSize="10pt"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:id="@+id/name"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Name"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:height="15pt"
+        android:width="130pt"
+        android:id="@+id/nameField"
+        android:layout_toRightOf="@id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="10pt"
+        android:textColor="@android:color/white"
+        android:text="Height"
+        android:id="@+id/height"
+        android:layout_marginTop="17dp"
+        android:layout_below="@id/name"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/heightField"
+        android:hint="Enter Height in Centimeters"
+        android:background="@android:color/white"
+        android:height="15pt"
+        android:width="130pt"
+        android:layout_below="@id/nameField"
+        android:layout_toRightOf="@id/height"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="10pt"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="17dp"
+        android:text="Weight"
+        android:layout_below="@id/height"
+        android:id="@+id/weight"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/weightField"
+        android:hint="Enter Weight in Kilograms"
+        android:background="@android:color/white"
+        android:height="15pt"
+        android:width="130pt"
+        android:layout_below="@id/heightField"
+        android:layout_toRightOf="@id/weight"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/genderTxt"
+        android:textSize="10pt"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="17dp"
+        android:layout_below="@id/weight"
+        android:text="Gender"
+        android:layout_alignParentLeft="true"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginLeft="8dp"
+        android:minHeight="15pt"
+        android:minWidth="30pt"
+        android:layout_marginTop="15dp"
+        android:id="@+id/gender"
+        android:layout_below="@id/weightField"
+        android:layout_toRightOf="@id/genderTxt"
+        />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderTxt"
+        android:layout_marginLeft="10dp"
+        android:text="Remember Me"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"
+        android:id="@+id/remember"
+
+        android:layout_marginTop="20dp"
+        />
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:width="100pt"
+          android:id="@+id/resultBtn"
+          android:layout_centerInParent="true"
+          android:text="Calculate BMI"
+          android:onClick="btnOnClick"
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/remember"
+
+          />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textColor="@android:color/black"
+          android:hint="BMI Result"
+          android:id="@+id/result"
+          android:width="150pt"
+          android:height="20pt"
+          android:layout_marginTop="10dp"
+          android:layout_below="@id/resultBtn"
+          android:background="@android:color/white"
+          android:textAlignment="center"
+          />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:width="100pt"
+        android:text="Activity 2"
+        android:id="@+id/btnAct"
+        android:onClick="btnNextAct"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+</RelativeLayout>
